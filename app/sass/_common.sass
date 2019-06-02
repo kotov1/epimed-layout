@@ -1,0 +1,463 @@
+.container
+	width: 100%
+	padding-right: 15px
+	padding-left: 15px
+	margin-right: auto
+	margin-left: auto
+
+@media (min-width: 576px)
+	.container
+		max-width: 540px
+
+@media (min-width: 768px)
+	.container
+		max-width: 758px
+
+@media (min-width: 992px)
+	.container
+		max-width: 960px
+
+@media (min-width: 1200px)
+	.container
+		max-width: 1200px
+
+@media (min-width: 1400px)
+	.container
+		max-width: 1398px
+
+.flex
+	display: flex
+	flex-wrap: wrap
+
+.col-1-2
+	flex: 0 0 50%
+	max-width: 50%
+
+
+/* ---------- titles & text --------------- */
+.h1, .h2
+	line-height: 1
+
+.h1
+	margin-bottom: .15em
+	font-size: 82px
+	letter-spacing: -.01em
+
+.page-title
+	font-size: 60px
+	letter-spacing: -.01em
+
+.h2
+	font-size: 56px
+
+.h3
+	font-size: 36px
+	line-height: 1.3
+
+.h4
+	font-size: 30px
+
+.h5
+	font-size: 18px
+	line-height: 1.2
+
+.txt
+	&-1
+		font-size: 22px
+		line-height: 1.45
+	&-2
+		font-size: 14px
+	
+	
+.img
+	display: block
+	max-width: 100%
+	height: auto
+
+.nowrap
+	white-space: nowrap
+
+.text-center
+	text-align: center
+
+.text-color
+	color: $text-color
+.accent-color
+	color: $accent-color
+.white-color
+	color: $white
+
+	
+a.text-color:hover
+	color: $accent-color
+a.accent-color:hover
+	color: $accent-hover
+
+.text-bold-italic
+	font-family: $italic-font
+	font-weight: 600
+	font-style: italic
+
+
+section.no-padding
+	padding: 0
+
+	
+
+/* ----- Кнопки ----- */
+.btn
+	display: inline-flex
+	align-items: center
+	justify-content: center
+	padding: 0.889em 2.392em
+	font-size: 18px
+	line-height: 1
+	border: 1px solid $accent-color
+	border-radius: 2em
+	transition: $trs-2
+	position: relative
+	z-index: 1
+	overflow: hidden
+	&::after
+		content: ''
+		display: block
+		width: 110%
+		height: 110%
+		position: absolute
+		border-radius: 1em
+		transition: .2s all ease-out
+		will-change: transform
+		z-index: -1
+	&:focus
+		box-shadow: 0 1px 5px rgba($accent-color, .9)
+		outline: none
+	&:hover::after
+		transform: translate(0, 0)
+	&--bg
+		background: $accent-color
+		color: $white
+		&::after
+			right: -5%
+			top: -5%
+			transform: translate(100%, 0) rotate(15deg)
+			transform-origin: 100% 0
+		&:hover
+			color: $accent-color
+			&::after
+				background: $white
+	&--trans
+		background: none
+		color: $accent-color
+		&::after
+			left: -5%
+			bottom: -5%
+			transform: translate(-100%, 0) rotate(15deg)
+			transform-origin: 0 100%
+		&:hover
+			color: $white
+			&::after
+				background: $accent-color
+
+
+/* ----- Списки ----- */
+ul.list
+	li
+		padding-left: 28px
+		position: relative
+		&::before
+			content: ''
+			display: block
+			width: 14px
+			height: 7px
+			position: absolute
+			left: 0
+			top: .45em
+			background: url('../img/icons/svg-list-ic.svg') no-repeat 0 0
+			background-size: 100%
+			z-index: 0
+
+
+
+/* ----- Fancy video ----- */
+.fancy-video-trigger
+	font-size: 10px
+	width: 23.6em
+	height: 23.6em
+	border-radius: 50%
+	color: $white
+	border: 1.5em solid $white
+	overflow: hidden
+	position: relative
+	a
+		display: block
+		background-image: linear-gradient(59deg, $accent-color 0%, $blue 100%)
+		position: absolute
+		width: 100%
+		height: 100%
+		color: inherit
+		&::before
+			content: ''
+			display: block
+			color: inherit
+			border: 3em solid transparent
+			border-left: 6em solid currentColor
+			position: absolute
+			left: 50%
+			top: 50%
+			transform: translate(-24%, -50%)
+			z-index: 0
+	span
+		font-size: 1.3em
+		letter-spacing: .33em
+		position: absolute
+		left: 50%
+		width: 0
+		bottom: 50%
+		transform-origin: 0% 100%
+		padding-bottom: 35%
+		transition: $trs-1
+		&:nth-child(1)
+			transform: rotate(293deg)
+		&:nth-child(2)
+			transform: rotate(300deg)
+		&:nth-child(3)
+			transform: rotate(307deg)
+		&:nth-child(4)
+			transform: rotate(314deg)
+		&:nth-child(5)
+			transform: rotate(321deg)
+		&:nth-child(6)
+			transform: rotate(328deg)
+		&:nth-child(7)
+			transform: rotate(334deg)
+		&:nth-child(8)
+			transform: rotate(341deg)
+		&:nth-child(9)
+			transform: rotate(348deg)
+		&:nth-child(10)
+			transform: rotate(354deg)
+
+		&:nth-child(11)
+			transform: rotate(5deg)
+		&:nth-child(12)
+			transform: rotate(12deg)
+		&:nth-child(13)
+			transform: rotate(19deg)
+		&:nth-child(14)
+			transform: rotate(26deg)
+		&:nth-child(15)
+			transform: rotate(33deg)
+
+		&:nth-child(16)
+			transform: rotate(43deg)
+
+		&:nth-child(17)
+			transform: rotate(53deg)
+		&:nth-child(18)
+			transform: rotate(60deg)
+		&:nth-child(19)
+			transform: rotate(67deg)
+
+	&:hover
+		a
+			animation: gradient-hover .8s infinite
+		span
+			padding-bottom: 34%
+
+.fancy-video-wrap
+	display: none
+	max-width: 1200px
+	padding: 0
+	background: none
+
+	.fancy-video
+		display: block
+		width: 100%
+		height: 100%
+		overflow: hidden
+
+	.fancybox-close-small
+		width: 40px
+		height: 40px
+		padding: 5px
+		border-radius: 50%
+		border: 1px solid #fff
+		transition: all .2s
+		&:hover
+			border-color: transparent
+		svg
+			color: #fff
+
+@keyframes gradient-hover
+	0%, 100%
+		background-image: linear-gradient(59deg, $accent-color 0%, $blue 100%)
+	15%
+		background-image: linear-gradient(29deg, $accent-color 0%, $blue 100%)
+	30%, 60%
+		background-image: linear-gradient(-15deg, $accent-color 0%, $blue 100%)
+	50%
+		background-image: linear-gradient(-59deg, $accent-color 0%, $blue 100%)
+	80%
+		background-image: linear-gradient(29deg, $accent-color 0%, $blue 100%)
+
+
+/* ----- Табы ----- */
+.p-tabs
+	display: flex
+	align-items: center
+	margin-bottom: 3rem
+	&--centered
+		justify-content: center
+		.p-tab
+			margin: 1em .4em 0
+.p-tab
+	min-width: 10.8em
+	margin: 1em .4em 0 0
+	padding: .1em 1.15em
+	height: 2.9em
+	font-size: 18px
+	white-space: nowrap
+	border-width: 1px
+	border-color: transparent
+	cursor: pointer
+	&:hover
+		color: $white
+		background-color: $accent-color
+		border-color: $accent-color
+	&.js-tab--active
+		cursor: default
+		color: #030303
+		background-color: $white
+		box-shadow: 0 0 1.5em rgba(8, 7, 7, 0.08)
+		border-color: $accent-color
+
+.js-tab-item:not(:first-child)
+	display: none
+
+
+/* ----- Элементы слика ----- */
+.slick-arrow
+	font-size: 10px
+	width: 7em
+	height: 7em
+	border-radius: 50%
+	box-shadow: 0 0 5.4em rgba(0, 0, 0, 0.08)
+	background: url('../img/icons/arrow.svg') no-repeat 50% 50% / 45% auto
+	outline: none
+	cursor: pointer
+	transition: $trs-1
+	&:hover
+		box-shadow: 0 0 4em rgba(0, 0, 0, 0.08), inset 0 0 1em rgba(0, 0, 0, 0.08)
+.slick-prev
+	transform: rotate(180deg)
+
+
+
+.slick-dots
+	margin-top: 50px
+	display: flex
+	justify-content: center
+	font-size: 0
+	button
+		display: block
+		width: 7px
+		height: 7px
+		margin: 0 6px
+		border-radius: 50%
+		background: #dbdbdb
+		transition: all .1s
+		border: none
+	.slick-active button
+		background: $accent-color
+
+
+
+
+
+
+
+
+@media only screen and (max-width : $media-xl)
+	.hide-on-xl
+		display: none !important
+
+	body
+		padding-top: 80px
+
+	.h1
+		font-size: 66px
+	.h2
+		font-size: 44px
+	.h3
+		font-size: 30px
+
+	.txt-1
+		font-size: 20px
+
+	.p-tab
+		font-size: 16px
+
+	.fancy-video-trigger
+		font-size: 8px
+
+
+
+
+@media only screen and (max-width : $media-lg)
+	.hide-on-lg
+		display: none !important
+
+	.h1
+		font-size: 52px
+
+	.slick-arrow
+		font-size: 9px
+
+	.p-tabs
+		flex-direction: column
+	.p-tab
+		width: 100%
+		max-width: 400px
+		height: 48px
+		margin-left: 0
+		margin-right: 0
+		box-shadow: 0 1px 4px rgba($black, .1)
+
+
+@media only screen and (max-width : $media-md)
+	.h1
+		font-size: 42px
+	.h2
+		font-size: 38px
+	.h3
+		font-size: 26px
+	.btn
+		font-size: 16px
+
+	.txt-1
+		font-size: 18px
+
+	.fancy-video-trigger
+		font-size: 7px
+
+	.slick-arrow
+		font-size: 8px
+	
+
+
+@media only screen and (max-width : $media-sm)
+	body
+		padding-top: 58px
+	.h1
+		font-size: 35px
+	.h2
+		font-size: 30px
+	.h3
+		font-size: 24px
+
+	.fancy-video-trigger
+		font-size: 6px
+
+	.slick-arrow
+		font-size: 7px
+

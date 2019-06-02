@@ -1,0 +1,44 @@
+.advantages
+	padding: 80px 0 50px
+	position: relative
+	.video-about
+		position: absolute
+		top: -50px
+		left: 50%
+		transform: translateX(-50%)
+	.h2
+		.d-block
+			display: block
+	&__block
+		margin-top: 70px
+		background-repeat: no-repeat
+		background-position: 0 0
+		background-size: 37%
+	&__list
+		padding-left: 39%
+		justify-content: space-between
+		li
+			width: 44%
+			margin-bottom: 33px
+	&__ic
+		min-height: 40px
+		margin-bottom: 14px
+
+
+@media only screen and (max-width : $media-xl)
+	.advantages
+		padding-bottom: 30px
+	.advantages__block
+		margin-top: 50px
+		background: none !important
+	.advantages__list
+		padding-left: 0
+
+
+@media only screen and (max-width : $media-sm)
+	.advantages
+		padding-top: 100px
+	.advantages__list
+		display: block
+		li
+			width: 100%

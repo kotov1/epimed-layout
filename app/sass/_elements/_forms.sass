@@ -1,0 +1,13 @@
+.form
+	&--black
+		.input
+			&::placeholder
+				color: $text-color
+		input:focus:required:invalid, input:required:valid, textarea:focus:required:invalid, textarea:required:valid
+			color: $text-color
+	&--white
+		.input
+			&::placeholder
+				color: $white
+		input:focus:required:invalid, input:required:valid, textarea:focus:required:invalid, textarea:required:valid
+			color: $white

@@ -1,0 +1,86 @@
+.footer
+	padding: 90px 0 30px
+	font-size: 14px
+	&__col
+		flex-grow: 0
+		flex-shrink: 0
+		padding: 0 15px 30px 0
+		&:last-child
+			padding-right: 0
+		&-1
+			flex-basis: 18%
+			max-width: 18%
+		&-2
+			flex-basis: 25%
+			max-width: 25%
+		&-3
+			flex-basis: 22%
+			max-width: 22%
+		&-4
+			flex-basis: 20%
+			max-width: 20%
+	&__nav
+		li:not(:last-child)
+			margin-bottom: .8em
+	&__data
+		margin-bottom: 0.6em
+		opacity: 0.77
+	&__link
+		color: $text-color
+	&__btn
+		display: flex
+		align-items: flex-start
+		justify-content: flex-end
+		flex-basis: 15%
+		max-width: 15%
+		.btn
+			padding: 0.64em 1.2em
+			min-width: 150px
+			min-height: 43px
+	address
+		margin-top: 0.9em
+	.social-icons
+		margin-bottom: 1.1em
+	.copyright
+		margin-top: 2.1em
+
+
+
+@media only screen and (max-width : $media-xl)
+	.footer
+		padding: 50px 0 15px
+	.footer__col-2, .footer__col-4
+		flex-basis: 28%
+		max-width: 28%
+	.footer__col-3
+		flex-basis: 23%
+		max-width: 23%
+	.footer__btn
+		flex-basis: 21%
+		max-width: 21%
+
+@media only screen and (max-width : $media-md)
+	.footer
+		padding-bottom: 0
+	.footer__col
+		flex: 0 0 50%
+		max-width: 50%
+	.footer__col-3
+		text-align: right
+	.footer__btn
+		display: none
+
+@media only screen and (max-width : $media-sm)
+	.footer__col
+		flex: 0 0 100%
+		max-width: 100%
+		padding-right: 0
+		text-align: center
+	.footer .social-icons
+		justify-content: center
+	.footer__btn
+		justify-content: center
+
+
+
+
