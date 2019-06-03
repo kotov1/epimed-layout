@@ -1241,6 +1241,16 @@ $(function() {
 	$('.before-after__item').twentytwenty();
 	beforeAfter('.js-slider-1');
 
+	$('.standarts-slider').slick({
+		dots: true,
+		prevArrow: '<button type="button" class="slick-prev"></button>',
+		nextArrow: '<button type="button" class="slick-next"></button>',
+		appendDots: $('.standarts-slider-dots'),
+		appendArrows: $('.standarts-slider-arrows'),
+		fade: true,
+		cssEase: 'ease'
+	});
+
 
 
 
@@ -1258,10 +1268,9 @@ $(function() {
 	for(i=0; i < dlgtrigger.length; ++i){
 		dlgtrigger[i].addEventListener( 'click', dlg.toggle.bind(dlg) );
 	}
-	// вызов модальной формы по клику на кнопку записи в динамическом результате квиза
+	
 	document.getElementById('quiz').addEventListener('click', function(e){
 		if(e.target && e.target.id== 'quiz-order-btn'){
-			// Передача содержимого результирующей ссылки в скрытый инпут модальной формы
 			var chosenService = document.getElementById('quiz-result-link').textContent;
 			document.getElementById('quiz-result-input').value = chosenService;
 			dlg.toggle(dlg);

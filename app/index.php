@@ -314,6 +314,105 @@
 	<!-- /.services -->
 
 
+	<!-- standarts -->
+	<section class="standarts">
+		<div class="container">
+			<h2 class="h2">Стандарты нашей работы:</h2>
+
+			<div class="standarts-slider-wrap">
+
+				<div class="standarts-slider">
+					<div class="slide">
+						<div class="standarts__row flex">
+							<div class="standarts__block">
+								<h3 class="h3">Лазерная <span class="text-bold-italic">эпиляция:</span></h3>
+								<p class="txt-2">Процедура проводится на новейшем израильском аппарате
+									Lightsheer, который гарантирует безопасность, безболезненность, комфортность  и полное прекращение роста нежелательных волос уже с первой процедуры. </p>
+									<p class="txt-2">Процедура проходит в специальных защитных очках с соблюдением всех норм техники безопасности.</p>
+							</div>
+							<div class="standarts__img">
+								<img src="img/img-2.jpg" alt="alt" class="img">
+							</div>
+						</div>
+					</div>
+					<div class="slide">
+						<div class="standarts__row flex">
+							<div class="standarts__block">
+								<h3 class="h3">Лазерная <span class="text-bold-italic">эпиляция:</span></h3>
+								<p class="txt-2">Процедура проводится на новейшем израильском аппарате
+									Lightsheer, который гарантирует безопасность, безболезненность, комфортность  и полное прекращение роста нежелательных волос уже с первой процедуры. </p>
+							</div>
+							<div class="standarts__img">
+								<img src="img/img-2.jpg" alt="alt" class="img">
+							</div>
+						</div>
+					</div>
+					<div class="slide">
+						<div class="standarts__row flex">
+							<div class="standarts__block">
+								<h3 class="h3">Лазерная <span class="text-bold-italic">эпиляция:</span></h3>
+								<p class="txt-2">Процедура проводится на новейшем израильском аппарате
+									Lightsheer, который гарантирует безопасность, безболезненность, комфортность  и полное прекращение роста нежелательных волос уже с первой процедуры. </p>
+							</div>
+							<div class="standarts__img">
+								<img src="img/img-2.jpg" alt="alt" class="img">
+							</div>
+						</div>
+					</div>
+					<div class="slide">
+						<div class="standarts__row flex">
+							<div class="standarts__block">
+								<h3 class="h3">Лазерная <span class="text-bold-italic">эпиляция:</span></h3>
+								<p class="txt-2">Процедура проводится на новейшем израильском аппарате
+									Lightsheer, который гарантирует безопасность, безболезненность, комфортность  и полное прекращение роста нежелательных волос уже с первой процедуры. </p>
+							</div>
+							<div class="standarts__img">
+								<img src="img/img-2.jpg" alt="alt" class="img">
+							</div>
+						</div>
+					</div>
+					<div class="slide">
+						<div class="standarts__row flex">
+							<div class="standarts__block">
+								<h3 class="h3">Лазерная <span class="text-bold-italic">эпиляция:</span></h3>
+								<p class="txt-2">Процедура проводится на новейшем израильском аппарате
+									Lightsheer, который гарантирует безопасность, безболезненность, комфортность  и полное прекращение роста нежелательных волос уже с первой процедуры. </p>
+							</div>
+							<div class="standarts__img">
+								<img src="img/img-2.jpg" alt="alt" class="img">
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /.standarts-slider -->
+
+				<div class="section-slider-nav">
+					<div class="section-slider-dots standarts-slider-dots"></div>
+					<div class="section-slider-arrows standarts-slider-arrows"></div>
+				</div>
+
+			</div>
+			<!-- /.standarts-slider-wrap -->
+
+		</div>
+		<!-- /.container -->
+	</section>
+	<!-- /.standarts -->
+
+
+	<!-- akcii -->
+	<section class="akcii">
+		<div class="container">
+			<h2 class="h2">Не знаете с чего начать? <span class="text-bold-italic">эпиляция:</span></h3>
+		</div>
+		<!-- /.container -->
+	</section>
+	<!-- /.akcii -->
+
+
+
+
+
 
 
 

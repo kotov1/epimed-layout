@@ -67,6 +67,8 @@
 		line-height: 1.45
 	&-2
 		font-size: 14px
+		+ .txt-2
+			margin-top: 1.5em
 	
 	
 .img
@@ -342,7 +344,7 @@ ul.list
 	height: 7em
 	border-radius: 50%
 	box-shadow: 0 0 5.4em rgba(0, 0, 0, 0.08)
-	background: url('../img/icons/arrow.svg') no-repeat 50% 50% / 45% auto
+	background: $white url('../img/icons/arrow.svg') no-repeat 50% 50% / 45% auto
 	outline: none
 	cursor: pointer
 	transition: $trs-1
@@ -350,8 +352,6 @@ ul.list
 		box-shadow: 0 0 4em rgba(0, 0, 0, 0.08), inset 0 0 1em rgba(0, 0, 0, 0.08)
 .slick-prev
 	transform: rotate(180deg)
-
-
 
 .slick-dots
 	margin-top: 50px
@@ -371,6 +371,50 @@ ul.list
 		background: $accent-color
 
 
+.section-slider
+	&-nav
+		display: flex
+		align-items: center
+		justify-content: space-between
+		
+	&-dots
+		.slick-dots
+			margin-top: 0
+		
+		li
+			&:not(:first-child)
+				position: relative
+				&::after
+					content: ''
+					display: block
+					width: 30px
+					height: 2px
+					position: absolute
+					right: 100%
+					top: 50%
+					margin-top: -1px
+					background: $accent-color
+					z-index: 0
+			
+		button
+			width: 18px
+			height: 18px
+			margin: 0 30px 0 0
+			background: $white
+			border: 5px solid $accent-color
+
+		.slick-active
+			button
+				background: $white
+			~ li
+				button
+					border-color: $blue
+				&::after
+					background: $blue
+
+	&-arrows
+		.slick-arrow
+			margin-left: 10px
 
 
 
